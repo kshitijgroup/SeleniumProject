@@ -25,6 +25,7 @@ public class AmazonTest extends TestBaseSetUp {
 			HomePage homePage = new HomePage(driver);
 			Assert.assertTrue(homePage.verifyPageTitle(),"Home page is not displayed");
 			System.out.println("Home Page is displayed");
+			System.out.println("Home Page is displayed_Nikhil");
 			WebElement aboutUsLink = driver.findElement(aboutUs);
 			JavascriptExecutor jse = (JavascriptExecutor) driver;
 			jse.executeScript("arguments[0].scrollIntoView(true);", aboutUsLink);
