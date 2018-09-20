@@ -11,6 +11,7 @@ public class TestBaseSetUp {
 
 	public WebDriver driver;
 
+	
 	static String driverPathIE = "drivers/iedriver/IEDriverServer.exe";
 	static String driverPathChrome = "drivers/chromedriver/chromedriver.exe";
 
