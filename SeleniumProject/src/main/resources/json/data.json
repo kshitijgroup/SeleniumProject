@@ -1,0 +1,14 @@
+{
+"username" : "anupam.chandan@yahoo.com",
+"password" : "Anupam@12",
+"url" : "https://www.abhibus.com/",
+"datavalue" : 1,
+"price": [
+        			{     
+        			     "adult" : "75.00"  // Base Price for 1 Adult
+        			},
+        			{     
+        			     "child" : "79.00"   // Base Price for 1 Child
+        			}
+        ]
+}
