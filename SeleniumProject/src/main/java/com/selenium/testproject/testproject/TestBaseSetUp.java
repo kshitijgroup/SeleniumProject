@@ -18,13 +18,17 @@ public class TestBaseSetUp {
 	public WebDriver getDriver() {
 		return driver;
 	}
+	static enum BrowserType{
+		ie,chrome, firefox, safari;
+	}
 
-	public void setDriver(String browserType, String appUrl) {
+	public void setDriver(BrowserType browserType, String appUrl) {
+		
 		switch (browserType) {
-		case "ie":
+		case ie:
 			driver = initElementsIEdriver(appUrl);
 			break;
-		case "chrome":
+		case chrome:
 			driver = initElementsChromedriver(appUrl);
 			break;
 		}
@@ -53,7 +57,7 @@ public class TestBaseSetUp {
 	@BeforeClass
 	public void testBaseSetupInitialization(String browserType, String appUrl) {
 		try {
-			setDriver(browserType, appUrl);
+			setDriver(BrowserType.valueOf(browserType), appUrl);
 		} catch (Exception e) {
 			System.out.println("Error is..." + e.getStackTrace());
 		}
