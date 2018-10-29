@@ -1,5 +1,7 @@
 package com.selenium.testproject.testproject;
 
+import java.io.FileNotFoundException;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -9,6 +11,12 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 public class AmazonTest extends TestBaseSetUp {
+
+
+	public AmazonTest() throws FileNotFoundException {
+		super();
+		
+	}
 
 	public WebDriver driver;
 	By aboutUs = By.xpath(".//*[@id='navFooter']//a[text()='About Us']");

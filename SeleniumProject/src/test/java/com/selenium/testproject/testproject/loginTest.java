@@ -18,7 +18,7 @@ public void test1() throws Exception{
 	System.setProperty("webdriver.chrome.driver", "src\\main\\resources\\drivers\\chromedriver.exe");
 	
 	WebDriver driver =  new ChromeDriver();
-	driver.get(readJSON("url"));
+	driver.get("https://www.abhibus.com/");
 	driver.manage().window().maximize();
 	String title = driver.getTitle();
 
