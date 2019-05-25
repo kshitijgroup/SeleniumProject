@@ -33,7 +33,6 @@ public class AmazonTest extends TestBaseSetUp {
 			HomePage homePage = new HomePage(driver);
 			Assert.assertTrue(homePage.verifyPageTitle(),"Home page is not displayed");
 			System.out.println("Home Page is displayed");
-			System.out.println("Home Page is displayed_Nikhil1");
 			WebElement aboutUsLink = driver.findElement(aboutUs);
 			JavascriptExecutor jse = (JavascriptExecutor) driver;
 			jse.executeScript("arguments[0].scrollIntoView(true);", aboutUsLink);
@@ -42,13 +41,14 @@ public class AmazonTest extends TestBaseSetUp {
 			Thread.sleep(3000);
 			System.out.println("Clicking on Your Orders link");
 			homePage.clickYourOrder();
+			Thread.sleep(6000);
 			System.out.println("Clicked on Your Orders link");
 
 			SigninPage signIn = new SigninPage(driver);
 			Assert.assertTrue(signIn.verifyPageTitle(), "Sign page is not displayed");
 			System.out.println("Sign Page is displayed");
 			
-			Thread.sleep(3000);
+			Thread.sleep(6000);
 			System.out.println("Entering Email ID");
 			signIn.enterEmail("kshitijchaudhary21@gmail.com");
 			

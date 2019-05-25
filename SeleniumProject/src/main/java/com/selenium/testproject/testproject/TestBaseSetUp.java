@@ -116,6 +116,6 @@ public class TestBaseSetUp {
 	}
 	@AfterClass
 	public void tearDown() {
-		driver.quit();
+		//driver.quit();
 	}
 }

@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.selenium.testproject.testproject.AmazonTest">
+      <class name="com.selenium.testproject.testproject.JsonDataParsingExample">
         <methods>
-          <include name="testAmazonScript"/>
+          <include name="testExample"/>
         </methods>
-      </class> <!-- com.selenium.testproject.testproject.AmazonTest -->
+      </class> <!-- com.selenium.testproject.testproject.JsonDataParsingExample -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

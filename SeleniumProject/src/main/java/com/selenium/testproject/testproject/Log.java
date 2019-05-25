@@ -13,7 +13,7 @@ public class Log {
 		PropertyConfigurator.configure(configFilename);
 	}
 	public static void logger(String msg) {
-		log.info(msg);
+		//log.info(msg);
 	
 	}
 }
