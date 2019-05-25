@@ -26,7 +26,7 @@ public class FirstDuplicateElementArray {
 			}
 		}
 		
-		System.out.println("************************************");
+		System.out.println("**********************************");
 		
 		System.out.println("Using HashSet");
 		//Using HasSet
