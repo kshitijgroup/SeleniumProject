@@ -3,11 +3,14 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.selenium.testproject.testproject.JsonDataParsingExample">
+      <class name="com.selenium.testproject.testproject.AmazonTest">
         <methods>
-          <include name="testExample"/>
+          <include name="testBaseSetupInitialization1"/>
+          <include name="testAmazonScript"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- com.selenium.testproject.testproject.JsonDataParsingExample -->
+      </class> <!-- com.selenium.testproject.testproject.AmazonTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

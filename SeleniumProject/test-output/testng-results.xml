@@ -2,20 +2,30 @@
 <testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="122" started-at="2019-05-23T18:59:02Z" finished-at="2019-05-23T18:59:03Z">
+  <suite name="Default suite" duration-ms="17533" started-at="2019-05-25T07:56:57Z" finished-at="2019-05-25T07:57:14Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="122" started-at="2019-05-23T18:59:02Z" finished-at="2019-05-23T18:59:03Z">
-      <class name="com.selenium.testproject.testproject.JsonDataParsingExample">
-        <test-method status="FAIL" signature="testExample()[pri:0, instance:com.selenium.testproject.testproject.JsonDataParsingExample@75077e76]" name="testExample" duration-ms="96" started-at="2019-05-24T00:29:02Z" finished-at="2019-05-24T00:29:03Z">
-          <exception class="java.lang.IllegalStateException">
+    <test name="Default test" duration-ms="17533" started-at="2019-05-25T07:56:57Z" finished-at="2019-05-25T07:57:14Z">
+      <class name="com.selenium.testproject.testproject.AmazonTest">
+        <test-method status="PASS" signature="testBaseSetupInitialization1()[pri:0, instance:com.selenium.testproject.testproject.AmazonTest@6d849e87]" name="testBaseSetupInitialization1" is-config="true" duration-ms="7295" started-at="2019-05-25T13:26:57Z" finished-at="2019-05-25T13:27:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBaseSetupInitialization1 -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.selenium.testproject.testproject.AmazonTest@6d849e87]" name="setUp" is-config="true" duration-ms="1" started-at="2019-05-25T13:27:04Z" finished-at="2019-05-25T13:27:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="testAmazonScript()[pri:0, instance:com.selenium.testproject.testproject.AmazonTest@6d849e87]" name="testAmazonScript" duration-ms="10200" started-at="2019-05-25T13:27:04Z" finished-at="2019-05-25T13:27:14Z">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[This is not a JSON Array.]]>
+              <![CDATA[Sign page is not displayed expected [true] but found [false]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.IllegalStateException: This is not a JSON Array.
-	at com.google.gson.JsonElement.getAsJsonArray(JsonElement.java:106)
-	at com.selenium.testproject.testproject.JsonDataParsingExample.testExample(JsonDataParsingExample.java:23)
+              <![CDATA[java.lang.AssertionError: Sign page is not displayed expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at com.selenium.testproject.testproject.AmazonTest.testAmazonScript(AmazonTest.java:48)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -42,11 +52,15 @@
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.IllegalStateException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testExample -->
-      </class> <!-- com.selenium.testproject.testproject.JsonDataParsingExample -->
+        </test-method> <!-- testAmazonScript -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.selenium.testproject.testproject.AmazonTest@6d849e87]" name="tearDown" is-config="true" duration-ms="0" started-at="2019-05-25T13:27:14Z" finished-at="2019-05-25T13:27:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.selenium.testproject.testproject.AmazonTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
