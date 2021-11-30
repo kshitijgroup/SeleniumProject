@@ -53,12 +53,18 @@ public class ReadExcelFile {
 				case STRING: System.out.print(cell.getStringCellValue()); break;
 				case NUMERIC: System.out.print(cell.getNumericCellValue());break;
 				case BOOLEAN: System.out.print(cell.getBooleanCellValue()); break;
+				case BLANK: System.out.print(cell.getStringCellValue()); break;
+				case FORMULA: System.out.print(cell.getStringCellValue()); break;
+				case ERROR: System.out.print(cell.getStringCellValue()); break;
+				case _NONE: System.out.print(cell.getStringCellValue()); break;
 				}
 				System.out.print(" | ");
 			}
 			System.out.println();
 			
 		}
+		fis.close();
+		wb.close();
 
 	}
 
