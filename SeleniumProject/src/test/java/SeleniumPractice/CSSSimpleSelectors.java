@@ -20,7 +20,7 @@ public class CSSSimpleSelectors {
 		
 		driver.findElement(By.cssSelector(".gender")).sendKeys("Male");
 		System.out.println(driver.findElements(By.cssSelector("*")).size());
-		
+		driver.quit();
 
 	}
 
