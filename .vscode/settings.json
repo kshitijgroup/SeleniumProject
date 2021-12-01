@@ -1,4 +1,6 @@
 {
     "java.configuration.updateBuildConfiguration": "automatic",
-    "debug.terminal.clearBeforeReusing": true
+    "debug.terminal.clearBeforeReusing": true,
+    "livePreview.defaultPreviewPath": "/SeleniumProject/target/surefire-reports/testng-junit-results/emailable-report.html",
+    "editor.fontSize": 13
 }
