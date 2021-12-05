@@ -29,18 +29,18 @@ public class HandleBrowserWindows {
         Set<String> windowIds = driver.getWindowHandles(); // return IDs of multiple browser windows
 
         //****** First Method - Iterator
-    /*  Iterator<String> itr = windowIds.iterator();
+        Iterator<String> itr = windowIds.iterator();
         String parentWindowId = itr.next();
         String childWindowId = itr.next();
 
         System.out.println("Parent Window ID is: " +parentWindowId);
         System.out.println("Child Window ID is: " +childWindowId);
-    */
+    
 
         //******Second Method - List/ArrayList
-    /*    List<String> windowIdsList = new ArrayList<String>(windowIds);
-        String parentWindowId = windowIdsList.get(0);
-        String childWindowId = windowIdsList.get(1);
+        List<String> windowIdsList = new ArrayList<String>(windowIds);
+        parentWindowId = windowIdsList.get(0);
+        childWindowId = windowIdsList.get(1);
 
         System.out.println(parentWindowId);
         System.out.println(childWindowId);
@@ -51,16 +51,14 @@ public class HandleBrowserWindows {
 
         driver.switchTo().window(childWindowId);
         System.out.println("Child window title: " +driver.getTitle());  // Expected Title: OrangeHRM HR Software | Free HR Software | HRMS | HRIS
-    */
+    
 
         //******For Each loop
-    /*  for(String winId : windowIds){
+        for(String winId : windowIds){
             String title =  driver.switchTo().window(winId).getTitle();
             System.out.println(title);
             driver.close();
         }
-        
-    */
         
         for(String winId : windowIds){
             String title =  driver.switchTo().window(winId).getTitle();
