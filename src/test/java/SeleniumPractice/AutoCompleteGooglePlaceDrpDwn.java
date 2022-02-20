@@ -20,7 +20,7 @@ public class AutoCompleteGooglePlaceDrpDwn {
         WebDriverManager.chromedriver().setup();
         ChromeOptions option = new ChromeOptions();
         option.addArguments("--disable-notifications");
-        WebDriver driver = new ChromeDriver();
+        WebDriver driver = new ChromeDriver(option);
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         driver.get("https://www.twoplugs.com/");
 
