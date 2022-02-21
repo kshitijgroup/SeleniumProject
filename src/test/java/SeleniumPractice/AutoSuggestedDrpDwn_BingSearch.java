@@ -25,10 +25,11 @@ public class AutoSuggestedDrpDwn_BingSearch {
         System.out.println(li.size());
 
         for(WebElement option : li){
-            if(option.getText().equalsIgnoreCase("selenium webdriver")){
+            if(option.getText().equalsIgnoreCase("selenium testing")){
                 option.click();
                 break;
             }
         }
+        driver.quit();
     }
 }
