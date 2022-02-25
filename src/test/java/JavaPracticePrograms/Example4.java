@@ -1,7 +1,5 @@
 package JavaPracticePrograms;
 
-import java.util.Arrays;
-
 public class Example4 {
 
     public static void main(String[] args){

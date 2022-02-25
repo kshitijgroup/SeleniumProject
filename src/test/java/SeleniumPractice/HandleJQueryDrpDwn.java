@@ -27,7 +27,7 @@ public class HandleJQueryDrpDwn {
         // 6 2 3");
         selectMultipleChoice(driver, "ALL");
         Thread.sleep(4000);
-        driver.quit();
+        //driver.quit();
     }
 
     public static void selectMultipleChoice(WebDriver driver, String... value) {
